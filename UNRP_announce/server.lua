@@ -1,0 +1,5 @@
+RegisterServerEvent("announce")
+AddEventHandler("announce", function(param)
+    print("^7[^2UNRP Announcement^7]^5:" .. param)
+    TriggerClientEvent("chatMessage", -1, "^7[^2UNRP Announcement^7]^2", {255,0,0}, param)
+end)
